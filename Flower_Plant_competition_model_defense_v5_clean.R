@@ -57,9 +57,6 @@ h= 24.0  #hours in a day
 I_day= h #required intervals per day
 D_h= h/2  #day light hours
 
-Th_s = 20 # day after which herbivory starts
-Th_e = Ts # day after which herbivory stops
-
 #photosynthesis
 k= 0.8  #light extinction coefficient 
 Lue_st= 0.020 #mol mol-1; Hikosaka et. 1999 Oecologia; taken as average high Lue; note in the paper, Lue changes with plant mass
@@ -96,13 +93,6 @@ C_l= 1.166 #umol m-2 s-1 #calculated from Pronks maintenance constant in gC/gC m
 C=C_l*(1/F_la)  # as a percentage of Pmax* a correction factor that accounts for night time respiration; set h to D_h when assuming no night time respiration
 
 
-
-
-
-D = c(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0)
-L_season = c(90.0, 180.0, 270.0, 360.0)
-Lue = c(Lue_st, Lue_st*1.25, Lue_st*0.75)
-Lue=Lue[1]
 #### helper functions
 
 # inverse logit
